@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rgister Page</title>
+<style>
+   header {
+    text-align: center; 
+    height: 200px;
+    border: 2px solid black;
+    background-image:url("img_flowers.jpg");
+    background-repeat: no-repeat;
+           background-size: cover;
+    font-size: 40px;
+    color: blue;
+ }
+  .navleft{
+    float: left;
+ }
+ .navright{
+    float: right;
+ }
+ nav{
+    background-color: blue;
+    padding: 10px;
+    font-weight:bold;
+    height: 100px;
+    border: 2px solid black;
+   }
+ 
+   nav a{
+      color: #fff;
+      font-size: 30px;
+   }
+   nav a:hover{
+       background-color: green;
+      color: #fff;
+   }
+ nav a.active{
+    background-color: #fff;
+    color: blue;
+   }
+     .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  
+  background-color: #f9f9f9;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+aside {
+    font-size: 25px;
+           margin-right:10px ; 
+           margin-left: 20px;
+            padding-left: 10px;
+            padding: 10px;
+            margin-top: 15px;
+         width: 150px;
+         height:500px;
+         float: left;
+            background-color:powderblue;
+}
+form{
+    
+     margin-left: 600px;
+     width: 30%;
+     text-align: center;
+     padding: 40px;
+     padding-left: 3px;
+     padding-bottom: 3px;
+     padding-right: 3px;
+     padding-top: 3px;
+       background-color: bisque;
+         }
+             input[type=text]{
+                width: 100px;
+                padding: 3px;
+             }
+             input[type= number]{
+                width: 100px;
+                padding: 3px;
+             }
+             select {
+                width: 100px;
+                padding:3px;
+             }
+             button[type=reset]{
+                background-color: red;
+                border: #c91d1d;
+                color: white;
+                 padding: 3px;
+                text-decoration: none;
+                width: 50px;
+              }
+             input[type=submit]{
+                background-color: blue;
+                border: #2e1dc9;
+                color: white;
+                padding: 3px;
+                text-decoration: none;
+                width: 50px;
+              }
+             input[type=password]{
+                width: 100px;
+                padding: 3px;
+             }
+             
+ footer{
+            background: #1e8cb8;
+            padding: 10px;
+            position: absolute;
+            bottom:0 ;
+            width: 100%;
+         }
+
+         footer p{
+            font-size: 1.5rem;
+            text-align: center;
+         }
+</style>
+</head>
+<body>
+   <header>
+         <h1>Student Register</h1>
+  </header>
+    </header>
+   <nav> 
+     <div class=" navleft">
+          <a href="index.html" >Home</a>&nbsp;&nbsp;
+          <a href="about.html">About us</a>&nbsp;&nbsp;
+          <a href="contact.html">Contact us</a>&nbsp;&nbsp;
+     </div>
+     <div class="navright">
+        <a href="student.html">Student</a>&nbsp;&nbsp;
+         <a href="login.html">Login</a>&nbsp;&nbsp;
+        <a href="register.html"class="active">Register</a>&nbsp;&nbsp;
+    </div>
+<div class="dropdown">
+     <button>Hierarchy</button>
+   <div class="dropdown-content">
+      <a href="viewstudent">viewstudent</a>
+     <a href="creatstudent">creatstudent</a>
+     <a href="viewcollage">viewcollage</a>
+      <a href="creatcollage">creatcollage</a>
+   </div>
+</div>
+       </nav>
+    </header>
+    <aside>
+        <ul style="list-style-type: none;">
+        <li> <a href="register.html">Register</a></li>
+        <li> <a href="student.html">viewStudent</a></li>
+         </ul>
+    </aside>
+    <section>
+      <form>
+        <fieldset>
+               <legend>Personal information</legend>
+        <label for="name">Name</label><br>
+        <input id="text" type="text" required><br>       
+        <label for="email">Email</label><br>
+        <input id="email" type="text" required><br>
+        <label for="password">password</label><br>
+        <input id="password" type="password" required><br>
+        <label for="gender">Gender</label><br>
+        <label for="male">male</label>
+        <input id="male" name="gender" type="radio">
+        <label for="female">female</label>
+        <input id="female" name="gender"  type="radio"><br>
+        <input type="submit" value="submit">
+         <button type="reset" onclick="clear">clear</button>
+        </fieldset>
+        <fieldset>
+        <legend>Address</legend>
+        <label for="number">Phone Number</label><br>
+         <input id="number" type="number"><br>
+         <label for="city">City</label><br>
+         <select name="city" id="city">
+            <option value="adiss">adiss abeba</option>
+            <option value="Gondar">Gondar</option>
+            <option value="Bahir">Bahir dar</option>
+            <option value="Dessie">Dessie</option>
+         </select><br><br>
+         <input type="submit" value="submit">
+         <button type="reset" onclick="clear">clear</button>
+         </fieldset>
+     </form>
+   </section>
+    <footer>
+        <p>
+            &copy;copy right reserved,woldiya universty.
+        </p>
+    </footer>
+ </body>
+</html>

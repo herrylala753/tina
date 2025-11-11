@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Woldia University</title>
+    <style>
+ header {
+    text-align: center; 
+    height: 200px;
+    border: 2px solid black;
+    background-image:url("img_flowers.jpg");
+    background-repeat: no-repeat;
+           background-size: cover;
+    font-size: 40px;
+    color: blue;
+ }
+ .navleft{
+    float: left;
+ }
+ .navright{
+    float: right;
+ }
+   nav{
+    background-color: blue;
+    padding: 10px;
+    font-weight:bold;
+    height: 100px;
+    border: 2px solid black;
+   }
+   nav a{
+    color: #fff;
+    font-size: 30px;
+   }
+     nav a:hover{
+    background-color: green;
+    color: #fff;
+ }
+ nav a.active{
+    background-color: #fff;
+    color: blue;
+   }
+   .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+div{
+   font-size: 17px;
+   font-family: 'Times New Roman', Times, serif;
+}
+dt{
+   font-weight: bold;
+   font-size:20px ;
+}
+  footer{
+            background: #1e8cb8;
+            padding: 10px;
+            position: absolute;
+            bottom:0 ;
+            width: 100%;
+         }
+         footer p{
+            font-size: 1.5rem;
+            text-align: center;
+         }
+         .pic{
+       margin-top: 20px;  
+       margin-left: 700px; 
+         }
+               
+    </style>
+    </head>
+<body>
+   <header>
+         <h1>Student Register</h1>
+  </header>
+    </header>
+   <nav> 
+     <div class=" navleft">
+          <a href="index.html" class="active">Home</a>&nbsp;&nbsp;
+          <a href="about.html">About us</a>&nbsp;&nbsp;
+          <a href="contact.html">Contact us</a>&nbsp;&nbsp;
+     </div>
+     <div class="navright">
+        <a href="student.html">Student</a>&nbsp;&nbsp;
+         <a href="login.html">Login</a>&nbsp;&nbsp;
+        <a href="register.html">Register</a>&nbsp;&nbsp;
+    </div>
+<div class="dropdown">
+     <button>Hierarchy</button>
+   <div class="dropdown-content">
+     <a href="viewstudent">viewstudent</a>
+     <a href="creatstudent">creatstudent</a>
+     <a href="viewcollage">viewcollage</a>
+      <a href="creatcollage">creatcollage</a>
+   </div>
+</div>
+   </nav>
+<section class="pic">
+<img  src="image\img_car.jpg" alt="this is car" width="350" height="100"><br>
+<img src="image\img_chania (1).jpg" alt="this is house" width="150" height="100">
+<img src="image\img_flowers.jpg" alt="this is flower" width="150" height="100">
+<img src="image\frenchfood.jpg" alt="this is food" width="150" height="100">
+</section>
+
+<div>
+<dl>
+   <dt>The car</dt>
+   <dd><p>The image shows a bright orange cars.It has a shiny surface and a sleek design.The background is a clear blue sky ,making the car stand out.</p></dd>
+</dl>
+<dl>
+   <dt>The House</dt>
+   <dd><p>The image shows a charming house with awarm,inviting look.It has a red brick exteriornand whitebtrim around the windows. A wll kept lawn surrounds the house,with colorful flowers .</p></dt>
+</dl>
+<dl>
+   <dt>The Flower</dt>
+   <dd><p> The image shows a beautifull flowers with bright petals,It has a rich color,like pink or vibrant yellow, and green leaves surrounding it. </dt>
+</dl>
+<dl>
+   <dt>The Plate</dt>
+   <dd>the images shows a plate food.It include like a bread and meetball.</dt>
+</dl>
+   </div>
+     <footer>
+        <p>&#169; copy right,reserved. Woldia university</p>
+    </footer>
+</body>
+</html>

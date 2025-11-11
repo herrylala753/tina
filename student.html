@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>Student Page</title>
+     <style>
+       header {
+           text-align: center; 
+           height: 200px;
+           border: 2px solid black;
+           background-image:url("img_flowers.jpg");
+           background-repeat: no-repeat;
+           background-size: cover;
+          font-size: 40px;
+          color: blue;
+                }
+         .navleft{
+             float: left;
+                 }
+          .navright{
+             float: right;
+                   }
+           nav{
+              background-color: blue;
+              padding: 10px;
+              font-weight:bold;
+              height: 100px;
+              border: 2px solid black;
+               }
+           nav a{
+               color: #fff;
+              font-size: 30px;
+            }
+          nav a:hover{
+             background-color: green;
+             color: #fff;
+            } 
+            nav a.active{
+               background-color: #fff;
+                color: blue;
+            }
+             .dropdown {
+                position: relative;
+                display: inline-block;
+                margin-top: 10px;
+               }
+              .dropdown-content {
+                  display: none;
+                  position: absolute;
+                 background-color: #f9f9f9;
+                 min-width: 160px;
+   
+               }
+              .dropdown:hover .dropdown-content {
+                   display: block;
+               }
+              .dropdown-content a {
+                  color:blue;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                 display: block;
+              }
+  
+               table ,th,td{
+                border-collapse: collapse;
+                text-align: center;
+                padding: 5px;
+                margin: 50px;
+                border: 2px solid black;
+                width: 100px;
+               }
+              section table{
+                 margin: auto;
+                 margin-top: 30px;
+               }
+             tr{
+                background-color: blue;
+               }
+               th{
+                background-color: #fff;
+                 }
+            aside{
+              margin-right: 50px;
+              padding-right: 30px;
+              float:left;
+              width:135px;
+              background-color:powderblue;
+             height: 600px;
+             margin-top: 10px;
+             font-size: 25px;
+           }
+          footer{
+             background: #1e8cb8;
+             padding: 10px;
+             position: absolute;
+             bottom: 0;
+             width: 100%;
+           }
+         footer p{
+            font-size: 1.5rem;
+            text-align: center;
+        }         
+      </style>
+   </head>
+     <body>
+        <header>
+           <h1>Student Register</h1>
+         </header>
+        <nav> 
+          <div class="navleft">
+              <a href="index.html">Home</a>&nbsp;&nbsp;
+              <a href="about.html">About us</a>&nbsp;&nbsp;
+              <a href="contact.html">Contact us</a>&nbsp;&nbsp;
+          </div>
+           <div class="navright">
+              <a href="student.html" class="active">Student</a>&nbsp;&nbsp;
+              <a href="login.html">Login</a>&nbsp;&nbsp;
+              <a href="register.html">Register</a>&nbsp;&nbsp;
+           </div>
+          <div class="dropdown">
+               <button>Hierarchy</button>
+             <div class="dropdown-content">
+                <a href="viewstudent">viewstudent</a>
+                <a href="creatstudent">creatstudent</a>
+                <a href="viewcollage">viewcollage</a>
+                <a href="creatcollage">creatcollage</a>
+              </div>
+           </div>
+       </nav>
+        <aside>
+          <ul>
+           <a href="register.html"> register</a>  
+           <a href="student.html">view student</a> 
+           </ul>
+         </aside>
+       <section>
+            <table>
+               <caption>Student Table</caption>
+             <tr>
+                <th>Name</th>
+                <th>Id</th>
+                <th >Department</th>
+                <th>Section</th>
+             </tr>
+             <tr>
+                <td>Eyerusalem Nigusse</td>
+                <td>WDU160530</td>
+                <td rowspan="3">Software</td>
+                <td rowspan="3">Two</td>
+              </tr>
+             <tr>
+                <td>Hermela</td>
+                <td>WDU160714</td>
+             </tr>
+              <tr>
+                <td>Tinsea Habtewold</td>
+                <td>WDU161233</td>
+              </tr>
+              <tr>
+                 <td>Eyerusalem Alemayehu</td>
+                 <td>WDU160529</td>
+                 <td rowspan="2">cs</td>
+                 <td rowspan="3">One</td>
+              </tr>
+              <tr>
+                <td>Fikir Asefa</td>
+                <td>WDU160529</td>
+              </tr>
+          </table>
+        </section>
+      <footer>
+        <p>&#169; copy right reserved, Woldia university</p>
+      </footer>
+ </body>
+</html> 
